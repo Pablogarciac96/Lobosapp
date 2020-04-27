@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".login">
+
+
+    <EditText
+        android:id="@+id/editText_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="429dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="E-mail"
+        android:textColor="#FCFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp" />
+
+
+    <EditText
+        android:id="@+id/editText_contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="Password"
+        android:textColor="#F8FFFFFF"
+        app:layout_constraintStart_toStartOf="@id/editText_email"
+        app:layout_constraintEnd_toEndOf="@id/editText_email"
+        app:layout_constraintTop_toTopOf="@id/editText_email"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/btn_entar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="130dp"
+        android:text="INICIAR SESION"
+        app:layout_constraintStart_toStartOf="@id/editText_email"
+        app:layout_constraintEnd_toEndOf="@id/editText_email"
+        app:layout_constraintTop_toTopOf="@id/editText_email"
+        android:layout_marginLeft="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

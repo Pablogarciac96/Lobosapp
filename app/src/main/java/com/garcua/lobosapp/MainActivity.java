@@ -25,9 +25,9 @@ public class MainActivity extends Activity {
         new Handler().postDelayed(new Runnable(){
             //cambio de actividad
             public void run(){
-               // Intent intent = new Intent(MainActivity.this, login.class);
+               Intent intent = new Intent(MainActivity.this, login.class);
                 getIntent().setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-             //   startActivity(intent);
+            startActivity(intent);
                 finish();
             };
         }, duracion);
